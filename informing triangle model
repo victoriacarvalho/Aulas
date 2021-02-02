@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+
+    float l1, l2, l3, iso, esc, equi;
+
+        printf("\n Digite o valor do lado 1 : \n >>>>> ");
+        scanf("%f",&l1);
+
+        printf("\n Digite o valor do lado 2 : \n >>>>> ");
+        scanf("%f",&l2);
+
+        printf("\n Digite o valor do lado 3 : \n >>>>> ");
+        scanf("%f",&l3);
+
+
+        if ((iso = l1 == l2 && l1 != l3)|| (l2 == l3 && l2 == l3)){
+            printf("\n O triangulo e isosceles \n ");
+        }
+            else
+                if (esc = l1 != l2 && l2 != l3 && l1 != l3){
+                printf("\n O triangulo e escaleno \n ");
+                }
+                    else
+                        if(equi = l1 == l2 && l2 == l3 && l1 == l3){
+                        printf("\n o triangulo e equilatero \n ");
+}
+
+    return 0;
+}
